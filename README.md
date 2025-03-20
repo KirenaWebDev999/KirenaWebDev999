@@ -12,4 +12,13 @@
 <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=KirenaWebDev999&exclude_repo=KNN-Image-Classification&show_icons=true&border_radius=10&layout=compact&langs_count=8&theme=radical"/>
 </p>
 
-<a href="https://github.com/DenverCoderl "><img alt="views" title="Github views" src=" https://freshidea.com/jonah/app/ghpvc/?label=Views#3 "/></a>
+
+<div id="profile-views-count">Loading...</div>
+
+<script>
+  fetch('https://api.github.com/users/KirenaWebDev999')
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById('profile-views-count').textContent = data.public_repos;
+    });
+</script>
