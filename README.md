@@ -13,12 +13,8 @@
 </p>
 
 
-<div id="profile-views-count">Loading...</div>
-
-<script>
-  fetch('https://api.github.com/users/KirenaWebDev999')
-    .then(response => response.json())
-    .then(data => {
-      document.getElementById('profile-views-count').textContent = data.public_repos;
-    });
-</script>
+<style>
+    img {
+        pointer-events: none;
+    }
+</style>
